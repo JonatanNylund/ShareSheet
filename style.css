@@ -23,10 +23,12 @@ body{
     transform: translate(-50%, -50%) scale(1.6);
 }
 
-.popup header{
+.popup :is(header, .icons){
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.popup header{
     padding-bottom: 15px;
     border-bottom: 1px solid #ebedf9;
 }
@@ -36,14 +38,36 @@ header span{
     font-weight: 600;
 }
 
+header .close, .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 header .close{
     color: #878787;
     height: 33px;
     width: 33px;
     background: #f2f3fb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     cursor: pointer;
+}
+
+.popup .content{
+    margin: 20px 0;
+}
+
+.content p{
+    font-size: 16px;
+}
+
+.content .icons{
+    margin: 15px 0 20px 0;
+}
+
+.icons a{
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+    text-decoration: none;
 }
