@@ -68,6 +68,39 @@ header .close{
 .icons a{
     height: 50px;
     width: 50px;
-    border: 1px solid red;
+    border: 1px solid transparent;
     text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons a:nth-child(1){
+    color: #1877F2;
+    border-color: #b7b4fb;
+}
+.icons a:nth-child(1):hover{
+    background: #1877F2;
+}
+.icons a:nth-child(2){
+    color: #46C1F6;
+    border-color: #b6e7fc;
+}
+.icons a:nth-child(2):hover{
+    background: #46C1F6;
+}
+.icons a:nth-child(3){
+    color: #e1306c;
+    border-color: #f5bccf;
+}
+.icons a:nth-child(3):hover{
+    background: #e1306c;
+}
+
+.icons a:nth-child(4){
+    color: #0088cc;
+    border-color: #b3e6ff;
+}
+
+.icons a:nth-child(4):hover{
+    background: #0088cc;
 }
