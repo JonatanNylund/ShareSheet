@@ -15,8 +15,32 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background: #fff;
     padding: 25px;
     border-radius: 15px;
+    max-width: 380px;
+    width: 100%;
+    transform: translate(-50%, -50%) scale(1.6);
+}
+
+.popup header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebedf9;
+}
+
+header span{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+header .close{
+    height: 33px;
+    width: 33px;
+    background: #f2f3fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
