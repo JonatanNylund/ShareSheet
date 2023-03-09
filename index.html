@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width">
     <title>ShareSheet</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
 </head>
 
 <body>
+    <button class="view-modal">View Modal</button>
     <div class="popup">
         <header>
-            <span>Share</span>
+            <span>Share Modal</span>
             <div class="close"><i class="uil uil-times"></i></div>
         </header>
         <div class="content">
@@ -26,9 +27,9 @@
             </ul>
             <p>Or copy link</p>
             <div class="field">
-                <i class="uil uil-link"></i>
-                <input type="text" value="senshdev.com/carrer">
-                <button>copy</button>
+                <i class="url-icon uil uil-link"></i>
+                <input type="text" readonly value="example.com/share-link">
+                <button>Copy</button>
             </div>
         </div>
     </div>
